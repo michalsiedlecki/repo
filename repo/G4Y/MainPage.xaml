@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="G4Y.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:G4Y"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Margin="0 10 0 0">
+            <SplitView.Pane>
+                <StackPanel Background="Gray">
+                    <Button x:Name="buttonShowPanel" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent" Click="buttonShowPanel_Click"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="TrainingMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE715;" Width="50" Height="50" Background="Transparent" Tapped="TrainingMenu_Tapped"/>
+                        <TextBlock Text="Training" FontSize="18" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="SuplementsMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE1CE;" Width="50" Height="50" Background="Transparent" Tapped="SuplementsMenu_Tapped" />
+                        <TextBlock Text="Suplement" FontSize="18" VerticalAlignment="Center" Tapped="SuplementsMenu_Tapped"/>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="BodyMenu" FontFamily="Segoe MDL2 Assets" Content="&#xF713;" Width="50" Height="50" Background="Transparent" Tapped="TextBlock_Tapped"/>
+                        <TextBlock Text="Body" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+        </SplitView>
+
+    </Grid>
+</Page>
