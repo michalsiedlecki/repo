@@ -10,11 +10,11 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Pivot Title="Trening" Margin="0,47,0,0">
             <PivotItem Header="Klatka">
-                <Grid>
-                    <ListBox  Background="#FFF7F2F1" Margin="10,0,10,0" Grid.Column="2">
-                        <TextBox x:Name="boxKlatkaPlasko" HorizontalAlignment="Left" Margin="10,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE POZIOMEJ" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
+                <Grid Grid.Column="2">
+                    <ListBox  Background="#FFF7F2F1" Margin="10,0,10,0" Grid.Row="0" Grid.ColumnSpan="2">
+                        <TextBox x:Name="boxKlatkaPlasko" HorizontalAlignment="Left" Margin="10,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE POZIOMEJ" VerticalAlignment="Top" Width="207" IsReadOnly="True" Grid.Column="0" />
                         <Button x:Name="buttonKlatkaPlasko" HorizontalAlignment="Left" Margin="10,0,0,0" Height="27" Width="207" Click="buttonKlatkaPlasko_Click"></Button>
-                        <TextBox x:Name="boxKlatkaSkosGora" HorizontalAlignment="Left" Margin="10,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE SKOŚNEJ-GŁOWĄ  W GÓRĘ" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
+                        <TextBox x:Name="boxKlatkaSkosGora" HorizontalAlignment="Left" Margin="10,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE SKOŚNEJ-GŁOWĄ  W GÓRĘ" VerticalAlignment="Top" Width="207" IsReadOnly="True" Grid.Column="1"/>
                         <Button x:Name="buttonKlatkaSkosGora" HorizontalAlignment="Left" Margin="10,0,0,0" Height="27" Width="207" Click="buttonKlatkaSkosGora_Click" ></Button>
                         <TextBox x:Name="boxKlatkaSkosDol" HorizontalAlignment="Left" Margin="10,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE SKOŚNEJ-GŁOWĄ W DÓŁ" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
                         <Button x:Name="buttonKlatkaSkosDol" HorizontalAlignment="Left" Margin="10,0,0,0" Height="27" Width="207" Click="buttonKlatkaSkosDol_Click" ></Button>

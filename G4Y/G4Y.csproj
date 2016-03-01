@@ -102,6 +102,7 @@
     <Compile Include="DescriptionOfTraining.xaml.cs">
       <DependentUpon>DescriptionOfTraining.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Klatka.cs" />
     <Compile Include="Trainings.xaml.cs">
       <DependentUpon>Trainings.xaml</DependentUpon>
     </Compile>

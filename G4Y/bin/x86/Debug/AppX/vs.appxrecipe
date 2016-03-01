@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>627259cf-d33e-4a67-bc4f-aebd6da713cf</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Majkell\Desktop\G4Y\G4Y\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>9C25425C9FC5190ACAA04D2CB6BE09FFE45AD8F066B5D334F019EA24F56F8188</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>E3485F42315C26C9A921A2F8C45C2B542D710878EB28AC9898A74475938E0D18</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>627259cf-d33e-4a67-bc4f-aebd6da713cf_1.0.0.0_x86__b5ajdfgkqv5d6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>627259cf-d33e-4a67-bc4f-aebd6da713cf_b5ajdfgkqv5d6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>627259cf-d33e-4a67-bc4f-aebd6da713cf</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-02-28T17:28:41.870</Modified>
+      <Modified>2016-03-01T19:12:39.896</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\G4Y.exe">
       <PackagePath>entrypoint\G4Y.exe</PackagePath>
-      <Modified>2016-02-28T17:28:40.168</Modified>
+      <Modified>2016-03-01T19:12:39.371</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -42,9 +42,25 @@
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
       <Modified>2015-11-17T17:40:43.542</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Azure.Mobile.Client\2.0.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+      <Modified>2016-03-01T09:24:52.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Azure.Mobile.Client\2.0.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
+      <Modified>2016-03-01T09:24:52.817</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
       <Modified>2015-11-17T17:40:45.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Net.Http\2.2.28\lib\win8\System.Net.Http.Extensions.dll">
+      <PackagePath>System.Net.Http.Extensions.dll</PackagePath>
+      <Modified>2016-02-15T17:59:37.270</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Net.Http\2.2.28\lib\win8\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+      <Modified>2016-02-15T17:59:37.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ComponentModel.DataAnnotations.dll">
       <PackagePath>System.ComponentModel.DataAnnotations.dll</PackagePath>
@@ -101,6 +117,10 @@
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Win32.Primitives\4.0.0\lib\dotnet\Microsoft.Win32.Primitives.dll">
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2015-11-17T17:40:44.215</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Newtonsoft.Json\6.0.4\lib\netcore45\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-02-15T17:59:37.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\SQLite.Net-PCL\3.1.0\lib\Windows8\SQLite.Net.Platform.WinRT.dll">
       <PackagePath>SQLite.Net.Platform.WinRT.dll</PackagePath>
@@ -510,7 +530,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\G4Y.xr.xml">
       <PackagePath>G4Y.xr.xml</PackagePath>
-      <Modified>2016-02-28T17:28:39.939</Modified>
+      <Modified>2016-03-01T15:38:59.345</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -518,11 +538,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-02-28T17:28:41.467</Modified>
+      <Modified>2016-03-01T15:39:00.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\Core\G4Y.exe">
       <PackagePath>G4Y.exe</PackagePath>
-      <Modified>2016-02-28T17:28:41.862</Modified>
+      <Modified>2016-03-01T19:12:39.891</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
