@@ -72,5 +72,30 @@ namespace G4Y
         {
             this.Frame.Navigate(typeof(DescriptionOfTraining), 5);
         }
+
+        private void buttonShowPanel_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+            if (!MySplitView.IsPaneOpen)
+                buttonShowPanel.Content = "\uE00E";
+            else
+                buttonShowPanel.Content = "\uE00F";
+        }
+
+        private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Body));
+        }
+
+        private void Back_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (Frame.CanGoBack) Frame.GoBack();
+
+        }
+
+        private void TrainingMenu_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Trainings));
+        }
     }
 }

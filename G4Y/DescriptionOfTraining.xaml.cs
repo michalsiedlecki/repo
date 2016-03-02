@@ -22,43 +22,34 @@ namespace G4Y
     {
        //private List<Klatka> items;
         private MobileServiceCollection<Klatka, Klatka> items;
-        private IMobileServiceTable<Klatka> todoTable = App.MobileService.GetTable<Klatka>();
-
- 
-
+        private IMobileServiceTable<Klatka> trainingTable = App.MobileService.GetTable<Klatka>();
+        
         public async void a(int value) {
-            var fname = String.Empty;
-            this.list.Items.Clear();
-             items = await todoTable.ToCollectionAsync();
-            fname = items.First().Description;
-            textBox1.Text = fname;
-           // var query =  todoTable;
-            // textBox.Text = Convert.ToString(items.ElementAt(1));
-            this.list.ItemsSource = items;
-
-
-           // textBox.Text = Convert.ToString(list.Items);
-           // textBox1.Text = Convert.ToString(todoTable.WithParameters());
-
+            var name = String.Empty;
+            var description = String.Empty;
+            items = await trainingTable.Where(x => x.id.Contains(Convert.ToString(value))).ToCollectionAsync();
+            name = items.First().Name;
+            description = items.First().Description;
+            textBox.Text = name;
+            textBox1.Text = description; 
         }
-       
-       
 
-        string path;
-        SQLite.Net.SQLiteConnection conn;
+        // Wypisywanie z SQLite
+       // string path;
+        //SQLite.Net.SQLiteConnection conn;
         public DescriptionOfTraining()
         {
             this.InitializeComponent();
-            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "db.sqlite");
-            conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-            conn.CreateTable<SQLTrainig>();
-            
-
+           // path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "db.sqlite");
+          //  conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
+           // conn.CreateTable<SQLTrainig>();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             int value = (int)e.Parameter;
+           
+            // Wypisywanie z SQLite
             /*  var query = conn.Table<SQLTrainig>();
               string trainingName = String.Empty;
               string trainingDescription = String.Empty;
@@ -71,8 +62,32 @@ namespace G4Y
 
               }*/
 
-            a(value);
-            
+            a(value);      
+        }
+
+        private void buttonShowPanel_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+            if (!MySplitView.IsPaneOpen)
+                buttonShowPanel.Content = "\uE00E";
+            else
+                buttonShowPanel.Content = "\uE00F";
+        }
+
+        private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Body));
+        }
+
+        private void Back_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (Frame.CanGoBack) Frame.GoBack();
+
+        }
+
+        private void TrainingMenu_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Trainings));
         }
     }
 }

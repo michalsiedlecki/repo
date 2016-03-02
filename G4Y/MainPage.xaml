@@ -16,15 +16,15 @@
                         <Button x:Name="TrainingMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE715;" Width="50" Height="50" Background="Transparent" Tapped="TrainingMenu_Tapped"/>
                         <TextBlock Text="Training" FontSize="18" VerticalAlignment="Center"/>
                     </StackPanel>
-                    
-                    <StackPanel Orientation="Horizontal">
-                        <Button x:Name="SuplementsMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE1CE;" Width="50" Height="50" Background="Transparent" Tapped="SuplementsMenu_Tapped" />
-                        <TextBlock Text="Suplement" FontSize="18" VerticalAlignment="Center" Tapped="SuplementsMenu_Tapped"/>
-                    </StackPanel>
-                    
+
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="BodyMenu" FontFamily="Segoe MDL2 Assets" Content="&#xF713;" Width="50" Height="50" Background="Transparent" Tapped="TextBlock_Tapped"/>
                         <TextBlock Text="Body" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="Back" FontFamily="Segoe MDL2 Assets" Content="&#xE1CE;" Width="50" Height="50" Background="Transparent" Tapped="Back_Tapped" />
+                        <TextBlock Text="Back" FontSize="18" VerticalAlignment="Center" Tapped="Back_Tapped"/>
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>

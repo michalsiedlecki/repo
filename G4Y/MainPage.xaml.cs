@@ -43,14 +43,10 @@ namespace G4Y
             this.Frame.Navigate(typeof(Body));
         }
 
-        private void SuplementsMenu_Click(object sender, RoutedEventArgs e)
+        private void Back_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
-        }
-
-        private void SuplementsMenu_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(Body));
+            if (Frame.CanGoBack) Frame.GoBack();
+          
         }
 
         private void TrainingMenu_Tapped(object sender, TappedRoutedEventArgs e)
