@@ -24,7 +24,7 @@ namespace G4Y
         private MobileServiceCollection<Klatka, Klatka> items;
         private IMobileServiceTable<Klatka> trainingTable = App.MobileService.GetTable<Klatka>();
         
-        public async void a(int value) {
+        public async void getData(int value) {
             var name = String.Empty;
             var description = String.Empty;
             items = await trainingTable.Where(x => x.id.Contains(Convert.ToString(value))).ToCollectionAsync();
@@ -62,7 +62,7 @@ namespace G4Y
 
               }*/
 
-            a(value);      
+            getData(value);      
         }
 
         private void buttonShowPanel_Click(object sender, RoutedEventArgs e)

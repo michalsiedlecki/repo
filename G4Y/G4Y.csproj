@@ -99,6 +99,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Data.cs" />
     <Compile Include="DescriptionOfTraining.xaml.cs">
       <DependentUpon>DescriptionOfTraining.xaml</DependentUpon>
     </Compile>

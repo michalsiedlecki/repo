@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-02T13:52:25.000</Modified>
+      <Modified>2016-03-03T15:46:17.024</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\G4Y.exe">
       <PackagePath>entrypoint\G4Y.exe</PackagePath>
-      <Modified>2016-03-02T13:52:24.414</Modified>
+      <Modified>2016-03-03T15:46:16.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -530,7 +530,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\G4Y.xr.xml">
       <PackagePath>G4Y.xr.xml</PackagePath>
-      <Modified>2016-03-02T13:46:24.550</Modified>
+      <Modified>2016-03-03T15:02:31.822</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -538,11 +538,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-02T13:52:24.834</Modified>
+      <Modified>2016-03-03T15:46:16.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\Core\G4Y.exe">
       <PackagePath>G4Y.exe</PackagePath>
-      <Modified>2016-03-02T13:52:24.999</Modified>
+      <Modified>2016-03-03T15:46:17.022</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

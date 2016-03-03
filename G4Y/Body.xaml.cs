@@ -12,19 +12,21 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.WindowsAzure.MobileServices;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace G4Y
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class Body : Page
     {
+        private MobileServiceCollection<Dane, Dane> items;
+        private IMobileServiceTable<Dane> resultsTable = App.MobileService.GetTable<Dane>();
+
         public Body()
         {
             this.InitializeComponent();
+            getData();
         }
 
         
@@ -37,12 +39,17 @@ namespace G4Y
             a = 4.15 * obwod;
             b = a / 2.54;
             c = 0.082 * masa * 2.2;
-            d = b - c - 98.42;
-            //(dla kobiet b – c - 76, 76)
+            //mężczyźni
+            if (radioButtonMan.IsChecked == true) {
+                d = b - c - 98.42; }
+            // kobiety
+            else { d = b - c - 76.76; }
             f = masa * 2.2;
             wynik = d / f * 100;
             if (wynik < 0)  textBlock3.Text = "0"; 
-            else textBlock3.Text = Convert.ToString(wynik); 
+            else textBlock3.Text = Convert.ToString(wynik);
+            sendData(wynik);
+            getData(); 
         }
 
         private void buttonShowPanel_Click(object sender, RoutedEventArgs e)
@@ -68,6 +75,18 @@ namespace G4Y
         private void TrainingMenu_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Trainings));
+        }
+
+        public async void sendData(double arg)
+        {
+            Dane send = new Dane {result = Convert.ToString(arg)};
+            await resultsTable.InsertAsync(send);
+        }
+
+        public async void getData()
+        {
+            items = await resultsTable.ToCollectionAsync();
+            this.listData.ItemsSource = items;
         }
     }
 }
