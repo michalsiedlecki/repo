@@ -32,10 +32,8 @@ namespace G4Y
         private void buttonShowPanel_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
-            if (!MySplitView.IsPaneOpen)
-                buttonShowPanel.Content = "\uE00E";
-            else
-                buttonShowPanel.Content = "\uE00F";
+            if (!MySplitView.IsPaneOpen) buttonShowPanel.Content = "\uE00F";
+            else buttonShowPanel.Content = "\uE00E";
         }
 
         private void TextBlock_Tapped(object sender, TappedRoutedEventArgs e)
@@ -52,6 +50,11 @@ namespace G4Y
         private void TrainingMenu_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Trainings));
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

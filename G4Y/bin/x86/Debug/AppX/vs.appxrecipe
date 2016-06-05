@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>627259cf-d33e-4a67-bc4f-aebd6da713cf</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Majkell\Desktop\G4Y\G4Y\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>E3485F42315C26C9A921A2F8C45C2B542D710878EB28AC9898A74475938E0D18</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>EF6D084A3B47395DD2476AEE712A9F11A273A0CD1CC228AE03F7B44F43A4BCF6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>627259cf-d33e-4a67-bc4f-aebd6da713cf_1.0.0.0_x86__b5ajdfgkqv5d6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>627259cf-d33e-4a67-bc4f-aebd6da713cf_b5ajdfgkqv5d6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>627259cf-d33e-4a67-bc4f-aebd6da713cf</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-03T15:46:17.024</Modified>
+      <Modified>2016-05-16T21:58:05.366</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\G4Y.exe">
       <PackagePath>entrypoint\G4Y.exe</PackagePath>
-      <Modified>2016-03-03T15:46:16.424</Modified>
+      <Modified>2016-05-16T21:58:04.907</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -42,13 +42,13 @@
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
       <Modified>2015-11-17T17:40:43.542</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Azure.Mobile.Client\2.0.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
-      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
-      <Modified>2016-03-01T09:24:52.784</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Azure.Mobile.Client\2.0.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.Ext.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.Ext.dll</PackagePath>
       <Modified>2016-03-01T09:24:52.817</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.Azure.Mobile.Client\2.0.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+      <Modified>2016-03-01T09:24:52.784</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -70,10 +70,6 @@
       <PackagePath>System.Core.dll</PackagePath>
       <Modified>2015-11-17T17:40:44.232</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.dll">
-      <PackagePath>System.dll</PackagePath>
-      <Modified>2015-11-17T17:40:44.255</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Net.dll">
       <PackagePath>System.Net.dll</PackagePath>
       <Modified>2015-11-17T17:40:44.276</Modified>
@@ -86,21 +82,17 @@
       <PackagePath>System.Runtime.Serialization.dll</PackagePath>
       <Modified>2015-11-17T17:40:44.335</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ServiceModel.dll">
-      <PackagePath>System.ServiceModel.dll</PackagePath>
-      <Modified>2015-11-17T17:40:44.379</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ServiceModel.Web.dll">
       <PackagePath>System.ServiceModel.Web.dll</PackagePath>
       <Modified>2015-11-17T17:40:44.399</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.ServiceModel.dll">
+      <PackagePath>System.ServiceModel.dll</PackagePath>
+      <Modified>2015-11-17T17:40:44.379</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Windows.dll">
       <PackagePath>System.Windows.dll</PackagePath>
       <Modified>2015-11-17T17:40:44.430</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.dll">
-      <PackagePath>System.Xml.dll</PackagePath>
-      <Modified>2015-11-17T17:40:44.450</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.Linq.dll">
       <PackagePath>System.Xml.Linq.dll</PackagePath>
@@ -109,6 +101,14 @@
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.Serialization.dll">
       <PackagePath>System.Xml.Serialization.dll</PackagePath>
       <Modified>2015-11-17T17:40:44.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.Xml.dll">
+      <PackagePath>System.Xml.dll</PackagePath>
+      <Modified>2015-11-17T17:40:44.450</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.NETCore.Portable.Compatibility\1.0.0\lib\netcore50\System.dll">
+      <PackagePath>System.dll</PackagePath>
+      <Modified>2015-11-17T17:40:44.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\Microsoft.VisualBasic\10.0.0\lib\netcore50\Microsoft.VisualBasic.dll">
       <PackagePath>Microsoft.VisualBasic.dll</PackagePath>
@@ -482,6 +482,10 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-11-17T17:40:45.327</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\.nuget\packages\XamlAnimatedGif\1.1.1\lib\portable-win81+wpa81\XamlAnimatedGif.dll">
+      <PackagePath>XamlAnimatedGif.dll</PackagePath>
+      <Modified>2016-03-02T10:36:47.669</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UAP.2015\3.10.0\Redist\Debug\x86\sqlite3.dll">
       <PackagePath>sqlite3.dll</PackagePath>
       <Modified>2016-01-09T19:26:07.466</Modified>
@@ -489,6 +493,106 @@
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2015-11-29T14:07:11.104</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\1.gif">
+      <PackagePath>Assets\1.gif</PackagePath>
+      <Modified>2016-03-26T15:34:29.022</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\10.gif">
+      <PackagePath>Assets\10.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.402</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\11.gif">
+      <PackagePath>Assets\11.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\12.gif">
+      <PackagePath>Assets\12.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.408</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\13.gif">
+      <PackagePath>Assets\13.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.411</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\14.gif">
+      <PackagePath>Assets\14.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.414</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\15.gif">
+      <PackagePath>Assets\15.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.417</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\16.gif">
+      <PackagePath>Assets\16.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\17.gif">
+      <PackagePath>Assets\17.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\18.gif">
+      <PackagePath>Assets\18.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\19.gif">
+      <PackagePath>Assets\19.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.429</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\2.gif">
+      <PackagePath>Assets\2.gif</PackagePath>
+      <Modified>2016-03-26T16:32:23.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\20.gif">
+      <PackagePath>Assets\20.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.432</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\21.gif">
+      <PackagePath>Assets\21.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.434</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\22.gif">
+      <PackagePath>Assets\22.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.437</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\23.gif">
+      <PackagePath>Assets\23.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.439</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\24.gif">
+      <PackagePath>Assets\24.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\3.gif">
+      <PackagePath>Assets\3.gif</PackagePath>
+      <Modified>2016-03-26T16:32:08.172</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\4.gif">
+      <PackagePath>Assets\4.gif</PackagePath>
+      <Modified>2016-03-26T16:32:03.648</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\5.gif">
+      <PackagePath>Assets\5.gif</PackagePath>
+      <Modified>2016-03-26T16:31:56.812</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\6.gif">
+      <PackagePath>Assets\6.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.390</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\7.gif">
+      <PackagePath>Assets\7.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\8.gif">
+      <PackagePath>Assets\8.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.396</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\9.gif">
+      <PackagePath>Assets\9.gif</PackagePath>
+      <Modified>2016-04-18T19:54:36.399</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Assets\wallpaper.jpg">
+      <PackagePath>Assets\wallpaper.jpg</PackagePath>
+      <Modified>2016-04-10T12:22:01.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -530,72 +634,72 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\G4Y.xr.xml">
       <PackagePath>G4Y.xr.xml</PackagePath>
-      <Modified>2016-03-03T15:02:31.822</Modified>
+      <Modified>2016-04-10T18:33:59.984</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2016-02-25T17:46:49.065</Modified>
+      <Modified>2016-04-11T20:46:57.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-03-03T15:46:16.861</Modified>
+      <Modified>2016-05-16T20:56:52.454</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\Core\G4Y.exe">
       <PackagePath>G4Y.exe</PackagePath>
-      <Modified>2016-03-03T15:46:17.022</Modified>
+      <Modified>2016-05-16T21:58:05.363</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
       <Name>Microsoft.NET.CoreRuntime.1.0</Name>
-      <Version>1.0.23430.0</Version>
+      <Version>1.0.23819.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23430.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\ARM\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
       <Name>Microsoft.NET.CoreRuntime.1.0</Name>
-      <Version>1.0.23430.0</Version>
+      <Version>1.0.23819.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23430.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x64\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\">
       <Name>Microsoft.NET.CoreRuntime.1.0</Name>
-      <Version>1.0.23430.0</Version>
+      <Version>1.0.23819.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23430.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.1.0, MinVersion = 1.0.23819.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.CoreRuntime\1.0\.\AppX\x86\Microsoft.NET.CoreRuntime.1.0.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.22929.0</Version>
+      <Version>14.0.23918.0</Version>
       <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23918.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.22929.0</Version>
+      <Version>14.0.23918.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23918.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
-      <Version>14.0.22929.0</Version>
+      <Version>14.0.23918.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.22929.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00.Debug, MinVersion = 14.0.23918.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.14.00.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>

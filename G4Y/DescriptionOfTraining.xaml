@@ -14,22 +14,23 @@
                     <Button x:Name="buttonShowPanel" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent" Click="buttonShowPanel_Click"/>
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="TrainingMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE753;" Width="50" Height="50" Background="Transparent" Tapped="TrainingMenu_Tapped"/>
-                        <TextBlock Text="Training" FontSize="18" VerticalAlignment="Center"/>
+                        <TextBlock Text="Trening" FontSize="18" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="BodyMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE8EF;" Width="50" Height="50" Background="Transparent" Tapped="TextBlock_Tapped"/>
-                        <TextBlock Text="Body" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
+                        <TextBlock Text="Waga" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="Back" FontFamily="Segoe MDL2 Assets" Content="&#xE72B;" Width="50" Height="50" Background="Transparent" Tapped="Back_Tapped" />
-                        <TextBlock Text="Back" FontSize="18" VerticalAlignment="Center" Tapped="Back_Tapped"/>
+                        <TextBlock Text="Wróć" FontSize="18" VerticalAlignment="Center" Tapped="Back_Tapped"/>
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>
         </SplitView>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="150,56,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" IsReadOnly="True"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="150,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" IsReadOnly="True"/>
+        <Image x:Name="Image" HorizontalAlignment="Left" Height="116" Margin="119,375,0,0" VerticalAlignment="Top" Width="100" />
     </Grid>
 </Page>

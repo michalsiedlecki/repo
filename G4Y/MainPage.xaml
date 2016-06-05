@@ -7,24 +7,30 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/wallpaper.jpg"/>
+        </Grid.Background>
         <SplitView x:Name="MySplitView" DisplayMode="CompactOverlay" IsPaneOpen="False" CompactPaneLength="50" OpenPaneLength="150" Margin="0 10 0 0">
+            <SplitView.Background>
+                <ImageBrush Stretch="Fill"/>
+            </SplitView.Background>
             <SplitView.Pane>
                 <StackPanel Background="Gray">
                     <Button x:Name="buttonShowPanel" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent" Click="buttonShowPanel_Click"/>
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="TrainingMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE753;" Width="50" Height="50" Background="Transparent" Tapped="TrainingMenu_Tapped"/>
-                        <TextBlock Text="Training" FontSize="18" VerticalAlignment="Center"/>
+                        <TextBlock Text="Trening" FontSize="18" VerticalAlignment="Center" SelectionChanged="TextBlock_SelectionChanged"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="BodyMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE8EF;" Width="50" Height="50" Background="Transparent" Tapped="TextBlock_Tapped"/>
-                        <TextBlock Text="Body" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
+                        <TextBlock Text="Waga" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="Back" FontFamily="Segoe MDL2 Assets" Content="&#xE72B;" Width="50" Height="50" Background="Transparent" Tapped="Back_Tapped" />
-                        <TextBlock Text="Back" FontSize="18" VerticalAlignment="Center" Tapped="Back_Tapped"/>
+                        <TextBlock Text="Wróć" FontSize="18" VerticalAlignment="Center" Tapped="Back_Tapped"/>
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>

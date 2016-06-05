@@ -9,6 +9,7 @@ namespace G4Y
 {
     class Klatka
     {
+        [JsonProperty(PropertyName = "id")]
         public string id { get; set; }
         [JsonProperty(PropertyName = "Name")]
         public string Name { get; set; }

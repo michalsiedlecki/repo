@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -29,27 +30,38 @@ namespace G4Y
             getData();
         }
 
-        
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            double obwod = Convert.ToDouble(textBox.Text);
-            double masa = Convert.ToDouble(textBox1.Text);
-            double a, b, c, d, f, wynik;
 
-            a = 4.15 * obwod;
-            b = a / 2.54;
-            c = 0.082 * masa * 2.2;
-            //mężczyźni
-            if (radioButtonMan.IsChecked == true) {
-                d = b - c - 98.42; }
-            // kobiety
-            else { d = b - c - 76.76; }
-            f = masa * 2.2;
-            wynik = d / f * 100;
-            if (wynik < 0)  textBlock3.Text = "0"; 
-            else textBlock3.Text = Convert.ToString(wynik);
-            sendData(wynik);
-            getData(); 
+        private async void button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                double obwod = Convert.ToDouble(textBox.Text);
+                double masa = Convert.ToDouble(textBox1.Text);
+                double a, b, c, d, f, wynik;
+
+                a = 4.15 * obwod;
+                b = a / 2.54;
+                c = 0.082 * masa * 2.2;
+                //mężczyźni
+                if (radioButtonMan.IsChecked == true)
+                {
+                    d = b - c - 98.42;
+                }
+                // kobiety
+                else { d = b - c - 76.76; }
+                f = masa * 2.2;
+                wynik = d / f * 100;
+                if (wynik < 0) textBlock3.Text = "0";
+                else textBlock3.Text = Convert.ToString(wynik);
+                sendData(wynik);
+                getData();
+            }
+            catch (Exception)
+            {
+                var statement = new MessageDialog("Nie wypełniłeś wszystkich pól lub zrobiłeś to nieprawidłowo.");
+                await statement.ShowAsync();
+            }
+            
         }
 
         private void buttonShowPanel_Click(object sender, RoutedEventArgs e)
@@ -79,7 +91,7 @@ namespace G4Y
 
         public async void sendData(double arg)
         {
-            Dane send = new Dane {result = Convert.ToString(arg)};
+            Dane send = new Dane { result = Convert.ToString(arg) };
             await resultsTable.InsertAsync(send);
         }
 

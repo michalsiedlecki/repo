@@ -672,3 +672,4 @@ C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\Newtonsoft.Json.dll
 C:\Users\Majkell\Desktop\G4Y\G4Y\obj\x86\Debug\Microsoft.WindowsAzure.Mobile\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
 C:\Users\Majkell\Desktop\G4Y\G4Y\obj\x86\Debug\G4Y.csproj.GenerateResource.Cache
 C:\Users\Majkell\Desktop\G4Y\G4Y\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml
+C:\Users\Majkell\Desktop\G4Y\G4Y\bin\x86\Debug\XamlAnimatedGif.dll

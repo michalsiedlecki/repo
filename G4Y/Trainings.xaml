@@ -14,17 +14,17 @@
                     <Button x:Name="buttonShowPanel" FontFamily="Segoe MDL2 Assets" Content="&#xE00F;" Width="50" Height="50" Background="Transparent" Click="buttonShowPanel_Click"/>
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="TrainingMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE753;" Width="50" Height="50" Background="Transparent" Tapped="TrainingMenu_Tapped"/>
-                        <TextBlock Text="Training" FontSize="18" VerticalAlignment="Center"/>
+                        <TextBlock Text="Trening" FontSize="18" VerticalAlignment="Center"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="BodyMenu" FontFamily="Segoe MDL2 Assets" Content="&#xE8EF;" Width="50" Height="50" Background="Transparent" Tapped="TextBlock_Tapped"/>
-                        <TextBlock Text="Body" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
+                        <TextBlock Text="Waga" FontSize="18" VerticalAlignment="Center" Tapped="TextBlock_Tapped"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal">
                         <Button x:Name="Back" FontFamily="Segoe MDL2 Assets" Content="&#xE72B;" Width="50" Height="50" Background="Transparent" Tapped="Back_Tapped" />
-                        <TextBlock Text="Back" FontSize="18" VerticalAlignment="Center" Tapped="Back_Tapped"/>
+                        <TextBlock Text="Wróć" FontSize="18" VerticalAlignment="Center" Tapped="Back_Tapped"/>
                     </StackPanel>
                 </StackPanel>
             </SplitView.Pane>
@@ -37,27 +37,78 @@
                         <RowDefinition Height="25*"/>
                     </Grid.RowDefinitions>
                     <ListBox  Background="#FFF7F2F1" Margin="0,0,10,0" Grid.Row="0" Grid.RowSpan="2">
-                        <TextBox x:Name="boxKlatkaPlasko" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE POZIOMEJ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="0" />
-                        <Button x:Name="buttonKlatkaPlasko" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaPlasko_Click"></Button>
+                        <TextBox x:Name="boxKlatkaPlasko"  HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE POZIOMEJ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="0" />
+                        <Button x:Name="buttonKlatkaPlasko" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaPlasko_Click" FontSize="13"></Button>
                         <TextBox x:Name="boxKlatkaSkosGora" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE SKOŚNEJ-GŁOWĄ  W GÓRĘ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="1"/>
-                        <Button x:Name="buttonKlatkaSkosGora" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaSkosGora_Click" ></Button>
+                        <Button x:Name="buttonKlatkaSkosGora" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaSkosGora_Click" FontSize="13" ></Button>
                         <TextBox x:Name="boxKlatkaSkosDol" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGI W LEŻENIU NA ŁAWCE SKOŚNEJ-GŁOWĄ W DÓŁ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
-                        <Button x:Name="buttonKlatkaSkosDol" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaSkosDol_Click" ></Button>
+                        <Button x:Name="buttonKlatkaSkosDol" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaSkosDol_Click" FontSize="13" ></Button>
                         <TextBox x:Name="boxKlatkaRozpietki" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="ROZPIĘTKI ZE SZTANGIELKAMI W LEŻENIU NA ŁAWCE POZIOMEJ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
-                        <Button x:Name="buttonKlatkaRozpietki" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaPompki_Click" ></Button>
+                        <Button x:Name="buttonKlatkaRozpietki" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaPompki_Click" FontSize="13" ></Button>
                         <TextBox x:Name="boxKlatkaPompki" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="POMPKI NA PORĘCZACH" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
-                        <Button x:Name="buttonKlatkaPompki" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaPompki_Click"></Button>
+                        <Button x:Name="buttonKlatkaPompki" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonKlatkaPompki_Click" FontSize="13"></Button>
                     </ListBox>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Plecy">
                 <Grid>
                     <ListBox>
-                        <TextBox x:Name="boxMartwyCiag" HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
-                        <TextBox x:Name="boxWioslowanie" HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
-                        <TextBox x:Name="boxP" HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
-                        <TextBox x:Name="boxP1" HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
-                        <TextBox x:Name="boxP3" HorizontalAlignment="Left" Margin="10,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="207" IsReadOnly="True"/>
+                        <TextBox x:Name="boxPlecyDrazek"  HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="PODCIĄGANIE NA DRĄŻKU" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="0" />
+                        <Button x:Name="buttonPlecyDrazek" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonPlecyDrazek_Click" FontSize="13"></Button>
+                        <TextBox x:Name="boxPlecyWioslowanieSztanga" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WIOSŁOWANIE SZTANGĄ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="1"/>
+                        <Button x:Name="buttonPlecyWioslowanieSztanga" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonPlecyWioslowanieSztanga_Click" FontSize="13" ></Button>
+                        <TextBox x:Name="boxPlecyWioslowanieHantla" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WIOSŁOWANIE HANTLĄ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonPlecyWioslowanieHantla" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonPlecyWioslowanieHantla_Click" FontSize="13" ></Button>
+                        <TextBox x:Name="boxPlecyRzymska" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="UNOSZENIE TUŁOWIA NA ŁAWCE RZYMSKIEJ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonPlecyRzymska" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonPlecyRzymska_Click" FontSize="13" ></Button>
+                        <TextBox x:Name="boxKPlecyMartwyCiag" HorizontalAlignment="Left" TextWrapping="Wrap" Text="MARTWY CIĄG NA UGIĘTYCH NOGACH" VerticalAlignment="Top" Width="197" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonPlecyMartwyCiag" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" Click="buttonPlecyMartwyCiag_Click" FontSize="13"></Button>
+                    </ListBox>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Barki">
+                <Grid>
+                    <ListBox>
+                        <TextBox x:Name="boxBarkiWyciskanie"  HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WYCISKANIE SZTANGIELEK" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="0" />
+                        <Button x:Name="buttonBarkiWyciskanie" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonBarkiWyciskanie_Click"></Button>
+                        <TextBox x:Name="boxBarkiUnoszenie" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="UNOSZENIE HANTLI BOKIEM" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="1"/>
+                        <Button x:Name="buttonBarkiUnoszenie" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonBarkiUnoszenie_Click" ></Button>
+                        <TextBox x:Name="boxBarkiOpad" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="UNOSZENIE HANTLI OPAD" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonBarkiOpad" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonBarkiOpad_Click" ></Button>
+                        <TextBox x:Name="boxBarkiPodciaganie" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="PODCIĄGANIE SZTANGI" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonBarkiPodciaganie" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonBarkiPodciaganie_Click" ></Button>
+                        <TextBox x:Name="boxBarkiPrzod" HorizontalAlignment="Left" TextWrapping="Wrap" Text="UNOSZENIE RAMION W PRZÓD" VerticalAlignment="Top" Width="197" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonBarkiPrzod" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonBarkiPrzod_Click"></Button>
+                    </ListBox>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Nogi">
+                <Grid>
+                    <ListBox>
+                        <TextBox x:Name="boxNogiPrzysiady"  HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="PRZYSIADY" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="0" />
+                        <Button x:Name="buttonNogiPrzysiady" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonNogiPrzysiady_Click"></Button>
+                        <TextBox x:Name="boxNogiProstowanie" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="PROSTOWANIE NÓG" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="1"/>
+                        <Button x:Name="buttonNogiProstowanie" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonNogiProstowanie_Click" ></Button>
+                        <TextBox x:Name="boxNogiUginanie" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="UGINANIE NÓG" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonNogiUginanie" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonNogiUginanie_Click" ></Button>
+                        <TextBox x:Name="boxNogiWykroki" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="WYKROKI" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonNogiWykroki" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonNogiWykroki_Click" ></Button>
+                        <TextBox x:Name="boxNogiStep" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Step" VerticalAlignment="Top" Width="197" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonNogiStep" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonNogiStep_Click"></Button>
+                    </ListBox>
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Biceps i Triceps">
+                <Grid>
+                    <ListBox>
+                        <TextBox x:Name="boxBicUginanie"  HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="UGINANIE RAMION" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="0" />
+                        <Button x:Name="buttonBicUginanie" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonBicUginanie_Click"></Button>
+                        <TextBox x:Name="boxBicModlitewnik" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="MODLITEWNIK" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True" Grid.Column="1"/>
+                        <Button x:Name="buttonBicModlitewnik" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonBicModlitewnik_Click" ></Button>
+                        <TextBox x:Name="boxTricProstowanie" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="PROSTOWANIE RAMION" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonTricProstowanie" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonTricProstowanie_Click" ></Button>
+                        <TextBox x:Name="boxTricFrancuz" HorizontalAlignment="Left" Margin="0,1,0,0" TextWrapping="Wrap" Text="FRANCUZ" VerticalAlignment="Top" Width="Auto" Height="Auto" IsReadOnly="True"/>
+                        <Button x:Name="buttonTricFrancuz" Content="Pokaż" HorizontalAlignment="Left" Margin="0,0,0,0" Height="27" Width="207" FontSize="13" Click="buttonTricFrancuz_Click" ></Button>
                     </ListBox>
                 </Grid>
             </PivotItem>

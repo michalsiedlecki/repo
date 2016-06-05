@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Microsoft.WindowsAzure.MobileServices;
+using XamlAnimatedGif;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -34,35 +35,23 @@ namespace G4Y
             textBox1.Text = description; 
         }
 
-        // Wypisywanie z SQLite
-       // string path;
-        //SQLite.Net.SQLiteConnection conn;
+        public void gif(int value)
+        {
+            string path = "ms-appx:///Assets/"+value+".gif";
+            var uri = new Uri(path);
+            AnimationBehavior.SetSourceUri(Image, uri);
+        }
         public DescriptionOfTraining()
         {
             this.InitializeComponent();
-           // path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "db.sqlite");
-          //  conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-           // conn.CreateTable<SQLTrainig>();
+            
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             int value = (int)e.Parameter;
-           
-            // Wypisywanie z SQLite
-            /*  var query = conn.Table<SQLTrainig>();
-              string trainingName = String.Empty;
-              string trainingDescription = String.Empty;
-
-              foreach (var item in query)
-              {
-                  if (item.Id == value)
-                  textBox.Text = String.Format( item.TrainingName);
-                  textBox1.Text = String.Format(item.Description);
-
-              }*/
-
-            getData(value);      
+             getData(value);
+             gif(value);      
         }
 
         private void buttonShowPanel_Click(object sender, RoutedEventArgs e)

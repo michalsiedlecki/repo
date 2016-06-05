@@ -34,6 +34,7 @@
       <RootProperty Name="OpenPaneLength" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Pane" />
+      <RootProperty Name="Background" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -43,7 +44,15 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="IsReadOnly" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="InputScope" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
@@ -59,6 +68,7 @@
       <RootProperty Name="Background" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Click" />
       <RootEvent Name="Tapped" />
@@ -72,6 +82,7 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Width" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="G4Y.DescriptionOfTraining" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
@@ -107,6 +118,10 @@
       <RootProperty Name="IsChecked" />
     </RootType>
     <RootType FullName="G4Y.Body" />
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="ImageSource" />
+    </RootType>
     <RootType FullName="G4Y.MainPage" />
   </Roots.RootTypes>
 </Roots>

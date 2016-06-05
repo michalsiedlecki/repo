@@ -20,32 +20,15 @@ namespace G4Y
 {
     public sealed partial class Trainings : Page
     {
-        string path;
-        SQLite.Net.SQLiteConnection conn;
 
 
         public Trainings()
         {
             this.InitializeComponent();
-            path = Path.Combine(Windows.Storage.ApplicationData.Current.LocalFolder.Path, "db.sqlite");
-            conn = new SQLite.Net.SQLiteConnection(new SQLite.Net.Platform.WinRT.SQLitePlatformWinRT(), path);
-            conn.CreateTable<SQLTrainig>();
-            ShowAll();
+            
         }
 
-        private void ShowAll()
-        {
-            //Dodanie rekordu
-            //var add = conn.Insert(new SQLTrainig() { TrainingName = "Wiatrak", Description = "Musisz zrobci dsadasd dasd" });
-    
-            var query = conn.Table<SQLTrainig>();
-            string result = String.Empty;
-            foreach (var item in query)
-                {
-                result = String.Format("{0} : {1}", item.Id, item.TrainingName, item.Description);
-                Debug.WriteLine(result);
-                }
-        }
+        
 
         
         private void buttonKlatkaPlasko_Click(object sender, RoutedEventArgs e)
@@ -72,6 +55,30 @@ namespace G4Y
         {
             this.Frame.Navigate(typeof(DescriptionOfTraining), 5);
         }
+        private void buttonPlecyDrazek_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 6);
+        }
+
+        private void buttonPlecyWioslowanieSztanga_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 7);
+        }
+
+        private void buttonPlecyWioslowanieHantla_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 8);
+        }
+
+        private void buttonPlecyRzymska_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 9);
+        }
+
+        private void buttonPlecyMartwyCiag_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 10);
+        }
 
         private void buttonShowPanel_Click(object sender, RoutedEventArgs e)
         {
@@ -96,6 +103,76 @@ namespace G4Y
         private void TrainingMenu_Tapped(object sender, TappedRoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Trainings));
+        }
+
+        private void buttonBarkiWyciskanie_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 11);
+        }
+
+        private void buttonBarkiUnoszenie_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 12);
+        }
+
+        private void buttonBarkiOpad_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 13);
+        }
+
+        private void buttonBarkiPodciaganie_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 14);
+        }
+
+        private void buttonBarkiPrzod_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 15);
+        }
+
+        private void buttonNogiPrzysiady_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 16);
+        }
+
+        private void buttonNogiProstowanie_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 17);
+        }
+
+        private void buttonNogiUginanie_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 18);
+        }
+
+        private void buttonNogiWykroki_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 19);
+        }
+
+        private void buttonNogiStep_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 20);
+        }
+
+        private void buttonBicUginanie_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 21);
+        }
+
+        private void buttonBicModlitewnik_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 22);
+        }
+
+        private void buttonTricProstowanie_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 23);
+        }
+
+        private void buttonTricFrancuz_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(DescriptionOfTraining), 24);
         }
     }
 }
